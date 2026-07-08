@@ -1,0 +1,47 @@
+# ===============================
+# Python
+# ===============================
+backend/venv/
+backend/__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ===============================
+# Environment Variables
+# ===============================
+.env
+backend/.env
+frontend/.env
+
+# ===============================
+# SQLite Database
+# (Remove this if using PostgreSQL)
+# ===============================
+backend/db.sqlite3
+
+# ===============================
+# VS Code
+# ===============================
+.vscode/
+
+# ===============================
+# Logs
+# ===============================
+*.log
+
+# ===============================
+# Node
+# ===============================
+frontend/node_modules/
+frontend/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===============================
+# OS Files
+# ===============================
+.DS_Store
+Thumbs.db
