@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "corsheaders",
 
     "accounts",
+    "profiles",
     "students",
     "recruiters",
     "companies",
@@ -137,7 +138,28 @@ USE_TZ = True
 STATIC_URL = 'static/'
 AUTH_USER_MODEL = "accounts.User"
 CORS_ALLOW_ALL_ORIGINS = True
+from datetime import timedelta
 
 REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    ),
+
+    "DEFAULT_PERMISSION_CLASSES": (
+        "rest_framework.permissions.AllowAny",
+    ),
+}
+
+SIMPLE_JWT = {
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=30),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=7),
+    "AUTH_HEADER_TYPES": ("Bearer",),
+}
+
+SPECTACULAR_SETTINGS = {
+    "TITLE": "CareerOS API",
+    "DESCRIPTION": "CareerOS Backend APIs",
+    "VERSION": "1.0.0",
 }
