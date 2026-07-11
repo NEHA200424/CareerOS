@@ -17,4 +17,15 @@ class ProfileService:
         )
 
         return profile
-    
+
+    @staticmethod
+    def update_profile(user, data):
+
+        profile = ProfileService.get_profile(user)
+
+        for key, value in data.items():
+            setattr(profile, key, value)
+
+        profile.save()
+
+        return profile
