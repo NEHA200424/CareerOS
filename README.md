@@ -119,4 +119,114 @@ CareerOS
 
 - Authentication
 - Student Profiles
-- Recruiter
+- Recruiter Profiles
+- Companies
+- Jobs
+- Applications
+
+### Phase 2
+
+- Recruiter Dashboard
+- Application Status Workflow
+- Notifications
+- Search & Filters
+
+### Phase 3
+
+- Career Score
+- AI Resume Analyzer
+- AI Career Roadmaps
+- Recommendation Engine
+
+### Phase 4
+
+- Frontend Dashboard
+- Deployment
+- Production Release
+
+---
+
+# API Documentation
+
+After starting the backend server:
+
+```text
+http://127.0.0.1:8000/api/docs/
+```
+
+---
+
+# Local Setup
+
+Clone the repository
+
+```bash
+git clone https://github.com/NEHA200424/careeros.git
+```
+
+Move into the backend
+
+```bash
+cd backend
+```
+
+Create virtual environment
+
+```bash
+python -m venv venv
+```
+
+Activate virtual environment
+
+```bash
+venv\Scripts\activate
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Run migrations
+
+```bash
+python manage.py migrate
+```
+
+Start the development server
+
+```bash
+python manage.py runserver
+```
+
+---
+
+# Future Enhancements
+
+- AI Resume Analysis
+- Career Recommendation Engine
+- Resume Builder
+- Interview Preparation
+- Email Notifications
+- Placement Analytics
+- Learning Roadmaps
+- Career Score Prediction
+
+---
+
+# Author
+
+**Neha Vinod Varma**
+
+B.Tech – Artificial Intelligence & Machine Learning
+
+Python Full Stack Developer
+
+GitHub: https://github.com/NEHA200424
+
+---
+
+# License
+
+This project is licensed under the MIT License.
