@@ -106,8 +106,6 @@ CareerOS
 
 # Completed Modules
 
-# Completed Modules
-
 | Module | Status |
 |---------|--------|
 | Authentication (JWT) | ✅ Complete |
