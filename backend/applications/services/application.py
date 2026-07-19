@@ -26,3 +26,11 @@ class ApplicationService:
             .select_related("job", "job__company")
             .order_by("-applied_at")
         )
+
+    @staticmethod
+    def update_status(application, status):
+
+        application.status = status
+        application.save()
+
+        return application

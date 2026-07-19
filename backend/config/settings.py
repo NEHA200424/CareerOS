@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     "walkins",
     "common",
     "ai_engine",
+    "dashboard",
 ]
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
